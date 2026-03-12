@@ -87,12 +87,12 @@
 				<!-- New Row -->
 				<div class="row">
 					<div class="col-sm">
-						<a href="login.php" class="btn w-100" 
+						<a href="./login.php" class="btn w-100" 
 						style="background-color: #ecf9ff; width: 20%; font-weight: bold; margin-top: 15px; color:rgb(4, 130, 12); box-shadow: 3px 3px 5px #000"> I'am Student </a>					
 					</div>
 
 					<div class="col-sm">
-						<a href="admin-login.php" class="btn w-100" 
+						<a href="./admin-login.php" class="btn w-100" 
 						style="background-color: #076d08; color: white; width: 20%; font-weight: bold; margin-top: 15px; box-shadow: 3px 3px 5px #000"> I'am Teacher </a>					
 					</div>
 				</div>
@@ -110,4 +110,5 @@
 </footer>
 
 </body>
+
 </html>
