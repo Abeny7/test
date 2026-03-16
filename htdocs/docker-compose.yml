@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    container_name: php_apache
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+    volumes:
+      - .:/var/www/html
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: examinationdb
+      MYSQL_USER: examuser
+      MYSQL_PASSWORD: exampassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./examinationdb.sql:/docker-entrypoint-initdb.d/examinationdb.sql
